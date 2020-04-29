@@ -1,0 +1,7 @@
+[user]
+	name = Vladislav Yundin
+	email = 4yundin@gmail.com
+[core]
+	autocrlf = input
+[merge]
+	tool = vimdiff
