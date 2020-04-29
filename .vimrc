@@ -109,7 +109,6 @@ set tags=tags;/
 
 " Leader
 let mapleader = ","
-nnoremap <Leader>a :echo "Hey there ,"<CR>
 
 " JavaDoc
 let g:javadoc_path = "/Users/vladislavyundin/Documents/Java/docs/api"
