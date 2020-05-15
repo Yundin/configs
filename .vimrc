@@ -115,3 +115,6 @@ let g:javadoc_path = "/Users/vladislavyundin/Documents/Java/docs/api"
 
 " Wordmotion
 let g:wordmotion_prefix = '<Leader>'
+
+" LaTex auto compile
+autocmd BufWritePost *.tex :!xelatex -interaction=nonstopmode %
