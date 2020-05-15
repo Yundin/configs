@@ -112,3 +112,6 @@ let mapleader = ","
 
 " JavaDoc
 let g:javadoc_path = "/Users/vladislavyundin/Documents/Java/docs/api"
+
+" Wordmotion
+let g:wordmotion_prefix = '<Leader>'
