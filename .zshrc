@@ -88,6 +88,8 @@ export PATH="$PATH:/Library/Frameworks/GHC.framework/Versions/7.8.3-x86_64/usr/b
 export PATH=$PATH:/Users/vladislavyundin/Library/Python/2.7/bin
 export PATH=$PATH:/usr/local/texlive/2019basic/bin/x86_64-darwin
 export PATH=$PATH:/Users/vladislavyundin/Library/Android/sdk/platform-tools
+export PATH=$PATH:/usr/local/opt
+export PATH=$PATH:/usr/local/sbin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
