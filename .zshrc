@@ -125,3 +125,21 @@ export GOPATH='/usr/local/go/bin'
 alias goserver="ssh root@185.17.120.159"
 alias ctags="/usr/local/bin/ctags"
 alias tmux="TERM=screen-256color-bce tmux"
+
+compdef '_files -g "*.c"' crun
+
+ctest() {
+    clang -x c <(printf '%s' "
+    #include <stdio.h>
+    #include <math.h>
+    #include <stdlib.h>
+    #include <time.h>
+    int main(void) {
+        $1
+        return 0;
+    }") && ./a.out && rm a.out
+}
+
+mkcd() {
+    mkdir $1 && cd $1
+}
