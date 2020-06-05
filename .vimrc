@@ -31,7 +31,7 @@ set wildmode=list:longest
 inoremap (( ()<Esc>i
 inoremap () ()
 inoremap {{ {  }<Esc>hi
-inoremap {<CR> {<CR>}<Esc>O<Tab>
+inoremap {<CR> {<CR>}<Esc>O
 
 " Disable arrows
 nnoremap <up> <nop>
@@ -118,3 +118,6 @@ let g:wordmotion_prefix = '<Leader>'
 
 " LaTex auto compile
 autocmd BufWritePost *.tex :!xelatex -interaction=nonstopmode %
+
+" Compile c
+autocmd filetype c nnoremap <Leader>c :w <CR>:!crun %<CR>
