@@ -90,6 +90,7 @@ export PATH=$PATH:/usr/local/texlive/2019basic/bin/x86_64-darwin
 export PATH=$PATH:/Users/vladislavyundin/Library/Android/sdk/platform-tools
 export PATH=$PATH:/usr/local/opt
 export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:~/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
