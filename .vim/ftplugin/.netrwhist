@@ -1,7 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyManagement/estimation'
+let g:netrw_dirhist_1='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyManagement'
+let g:netrw_dirhist_0='/Users/vladislavyundin/cProjects/garbage'
+let g:netrw_dirhist_9='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyManagement/estimation/fixed_results'
+let g:netrw_dirhist_8='/Users/vladislavyundin/bugreport-OnePlus3-PKQ1.181203.001-2020-05-13-12-21-11/FS/proc/26088'
+let g:netrw_dirhist_7='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyManagement/estimation/results'
+let g:netrw_dirhist_6='/Users/vladislavyundin/BackendProjects'
 let g:netrw_dirhist_5='/usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm'
 let g:netrw_dirhist_4='/Library/Fonts/Latin Modern'
 let g:netrw_dirhist_3='/Users/vladislavyundin/latex_coursera/1.2'
-let g:netrw_dirhist_2='/Users/vladislavyundin/latex_coursera'
-let g:netrw_dirhist_1='/Users/vladislavyundin/.ssh'
