@@ -82,6 +82,8 @@ nnoremap k gk
 let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme molokai
+" transparent bg
+hi Normal ctermbg=none
 
 " CtrlP
 nnoremap <C-e> :CtrlPMRU<CR>
@@ -120,4 +122,9 @@ let g:wordmotion_prefix = '<Leader>'
 autocmd BufWritePost *.tex :!xelatex -interaction=nonstopmode %
 
 " Compile c
-autocmd filetype c nnoremap <Leader>c :w <CR>:!crun %<CR>
+autocmd filetype c nnoremap <Leader>c :w<CR>:silent !clear<CR>:!crun %<CR>
+
+" Common clipboard
+set clipboard=unnamed
+nnoremap p "0p
+nnoremap P "0P
