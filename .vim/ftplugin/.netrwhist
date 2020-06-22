@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/vladislavyundin/cProjects/c_hello'
 let g:netrw_dirhist_2='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyManagement/estimation'
 let g:netrw_dirhist_1='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyManagement'
 let g:netrw_dirhist_0='/Users/vladislavyundin/cProjects/garbage'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/Users/vladislavyundin/AndroidStudioProjects/UIEnergyMana
 let g:netrw_dirhist_6='/Users/vladislavyundin/BackendProjects'
 let g:netrw_dirhist_5='/usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm'
 let g:netrw_dirhist_4='/Library/Fonts/Latin Modern'
-let g:netrw_dirhist_3='/Users/vladislavyundin/latex_coursera/1.2'

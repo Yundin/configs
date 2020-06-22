@@ -111,6 +111,9 @@ export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu nornu noma' 
 # Go directory
 export GOPATH='/usr/local/go/bin'
 
+# Some language fix
+export LC_ALL=en_US.UTF-8
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
