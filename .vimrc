@@ -123,8 +123,16 @@ autocmd BufWritePost *.tex :!xelatex -interaction=nonstopmode %
 
 " Compile c
 autocmd filetype c nnoremap <Leader>c :w<CR>:silent !clear<CR>:!crun %<CR>
+autocmd filetype cpp nnoremap <Leader>c :w<CR>:silent !clear<CR>:!cpprun %<CR>
 
 " Common clipboard
 set clipboard=unnamed
-nnoremap p "0p
-nnoremap P "0P
+nnoremap d "_d
+nnoremap D "_D
+vnoremap d "_d
+vnoremap D "_D
+
+nnoremap c "_c
+nnoremap C "_C
+vnoremap c "_c
+vnoremap C "_C

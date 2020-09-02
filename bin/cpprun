@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+OUT=${1:t:r}
+g++ $1 -o $OUT && echo "Running..." && ./$OUT
