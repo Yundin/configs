@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+PATH=$PATH:/usr/sbin:/sbin:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources
+
+print_current_wifi () {
+    echo "Current wifi - \"`airport -I | grep " SSID:" | sed -n -e 's/^.*SSID: //p'`\""
+}
+
+reset_wifi () {
+    networksetup -setairportpower $INTERFACE off && networksetup -setairportpower $INTERFACE on
+}
+
+reset_interface () {
+    ifconfig $INTERFACE down && ifconfig $INTERFACE up
+}
+
+connect_int_wifi () {
+    networksetup -setairportnetwork $INTERFACE "int-wifi-n"
+}
+
+try_to_reanimate () {
+    echo -e '\nTrying to reanimate'
+    reset_wifi
+    reset_interface
+    connect_int_wifi
+}
+
+echo 'Start'
+date
+print_current_wifi
+
+echo ""
+ping -c 5 google.com && echo -e '\nLGTM!' && exit 0
+
+INTERFACE=$(networksetup -listnetworkserviceorder | grep Wi-Fi, | cut -d ' ' -f 5 | cut -c 1-3)
+try_to_reanimate
+
+print_current_wifi
+date
+echo End

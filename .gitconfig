@@ -5,3 +5,5 @@
 	autocrlf = input
 [merge]
 	tool = vimdiff
+[pull]
+	rebase = true

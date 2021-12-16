@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+git add .
+git diff --cached > test.patch
+git reset --hard HEAD

@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+./gradlew clean && rm -r ~/.gradle/caches/build-cache-1

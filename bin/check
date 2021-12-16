@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+./gradlew detektAll lintDebug lintpsb_appstoreDebug testDebug

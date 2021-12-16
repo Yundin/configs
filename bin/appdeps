@@ -1,0 +1,25 @@
+#!/usr/bin/env zsh
+
+appmodules=($(print -l */src | grep -v 'app/' | grep -v 'application'))
+function find_imports() {
+    grep -R 'import ru.psbank.msb.dev' $@ | cut -d' ' -f2 | tr -d ';' | sort | uniq -c | sort --reverse
+}
+
+for module in $appmodules; do
+    echo "$module:h:"
+    imports=$(find_imports $module)
+    if [[ $imports ]]; then
+        echo $imports
+    else
+        echo "No imports from ru.bsbank.msb.dev"
+        dependency_search=$(grep 'project..:app' "$module:h/build.gradle")
+        if [[ $dependency_search ]]; then
+            echo "But there is an app dependency:"
+            echo $dependency_search
+        fi
+    fi
+    echo ""
+done
+
+echo "Overall count:"
+find_imports $appmodules

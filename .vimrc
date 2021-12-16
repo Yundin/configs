@@ -127,11 +127,6 @@ autocmd filetype cpp nnoremap <Leader>c :w<CR>:silent !clear<CR>:!cpprun %<CR>
 
 " Common clipboard
 set clipboard=unnamed
-nnoremap d "_d
-nnoremap D "_D
-vnoremap d "_d
-vnoremap D "_D
-
 nnoremap c "_c
 nnoremap C "_C
 vnoremap c "_c

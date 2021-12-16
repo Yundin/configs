@@ -91,6 +91,7 @@ export PATH=$PATH:/Users/vladislavyundin/Library/Android/sdk/platform-tools
 export PATH=$PATH:/usr/local/opt
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:~/bin
+export PATH=$PATH:/Users/vladislavyundin/Library/Android/sdk/tools/proguard/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -114,6 +115,9 @@ export GOPATH='/usr/local/go/bin'
 # Some language fix
 export LC_ALL=en_US.UTF-8
 
+# Java
+export JAVA_HOME="/Applications/AndroidStudio.app/Contents/jre/Contents/Home"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -126,6 +130,10 @@ export LC_ALL=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias goserver="ssh root@185.17.120.159"
+alias mac0="ssh psbandroidci@172.30.79.201"
+alias mac1="ssh psbandroidci@172.30.204.86"
+alias mac2="ssh psb_android_ci@172.30.70.227"
+alias mac3="ssh psb_android_ci@172.30.115.2"
 alias ctags="/usr/local/bin/ctags"
 alias tmux="TERM=screen-256color-bce tmux"
 
