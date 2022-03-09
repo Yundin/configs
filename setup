@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-ln -s .vim ~/.vim
-ln -s bin ~/bin
-ln -s .gitconfig ~/.gitconfig
-ln -s .tmux.conf ~/.tmux.conf
-ln -s .vimrc ~/.vimrc
-ln -s .zshrc ~/.zshrc
+ln -s `pwd`/.vim ~/.vim
+ln -s `pwd`/bin ~/bin
+ln -s `pwd`/.gitconfig ~/.gitconfig
+ln -s `pwd`/.tmux.conf ~/.tmux.conf
+ln -s `pwd`/.vimrc ~/.vimrc
+ln -s `pwd`/.zshrc ~/.zshrc
