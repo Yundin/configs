@@ -129,7 +129,7 @@ export JAVA_HOME="/Applications/AndroidStudio.app/Contents/jre/Contents/Home"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias goserver="ssh root@185.17.120.159"
+alias goserver="ssh root@141.95.14.216"
 alias mac0="ssh psbandroidci@172.30.79.201"
 alias mac1="ssh psbandroidci@172.30.204.86"
 alias mac2="ssh psb_android_ci@172.30.70.227"
