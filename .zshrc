@@ -72,7 +72,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git 
-	adb # adb autocomplete 
 	copybuffer # ctrl-o to copy typed text
 	extract # extract <file>
 	transfer # transfer <file>. Upload for sharing.
@@ -80,6 +79,9 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # User configuration
 
@@ -89,6 +91,8 @@ export PATH=$PATH:/usr/local/opt
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/Library/Android/sdk/tools/proguard/bin
+export PATH=$PATH:~/Library/Android/sdk/cmdline-tools/latest/bin
+export PATH=$PATH:~/.local/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -106,14 +110,21 @@ export EDITOR='vim'
 # Setting pager to vim
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu nornu noma' -"
 
-# Go directory
-export GOPATH='/usr/local/go/bin'
+# Go
+export GOPATH='/Users/vladislavyundin/go'
+export PATH=$PATH:/usr/local/go/bin
 
 # Some language fix
 export LC_ALL=en_US.UTF-8
 
 # Java
-export JAVA_HOME="/Applications/AndroidStudio.app/Contents/jre/Contents/Home"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
+#export JAVA_HOME="/opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home"
+export PATH=$PATH:$JAVA_HOME/bin
+
+# Android
+export ANDROID_HOME=/Users/vladislavyundin/Library/Android/sdk
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
