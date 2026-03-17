@@ -112,7 +112,6 @@ export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu nornu noma' 
 
 # Go
 export GOPATH='/Users/vladislavyundin/go'
-export PATH=$PATH:/usr/local/go/bin
 
 # Some language fix
 export LC_ALL=en_US.UTF-8
@@ -158,3 +157,8 @@ ctest() {
 mkcd() {
     mkdir $1 && cd $1
 }
+
+export OPENROUTER_API_KEY="API_KEY"
+export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
+export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
+export ANTHROPIC_API_KEY="" # Important: Must be explicitly empty
